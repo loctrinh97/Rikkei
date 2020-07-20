@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#EAE7E7"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Pick your toppings"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/holo_blue_bright" />
+
+    <CheckBox
+        android:id="@+id/cbOnion"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:button="@null"
+        android:checked="false"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:padding="4dp"
+        android:text="Onion"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <CheckBox
+        android:id="@+id/cbLettuce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:padding="4dp"
+        android:text="Lettuce"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <CheckBox
+        android:id="@+id/cbTomato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:padding="4dp"
+        android:text="Tomato"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EAE7E7"
+            android:text="Cancel"
+            android:textStyle="normal"></Button>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EAE7E7"
+            android:text="OK"></Button>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
